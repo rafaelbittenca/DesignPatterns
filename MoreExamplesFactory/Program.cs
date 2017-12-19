@@ -1,5 +1,6 @@
 ﻿using MoreExamplesFactory.Example01;
 using MoreExamplesFactory.Example02;
+using MoreExamplesFactory.Example03Simple;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -43,6 +44,27 @@ namespace MoreExamplesFactory
 			Console.WriteLine(samsungClient.GetSmartPhoneModelDetails());
 			Console.WriteLine(samsungClient.GetNormalPhoneModelDetails());
 
+			#endregion
+
+			Console.WriteLine("");
+
+			#region Example03
+			Console.WriteLine("********* Example03 **********");
+			Document[] documents = new Document[2];
+
+			documents[0] = new Resume();
+			documents[1] = new Report();
+
+			// Display document pages
+
+			foreach (Document document in documents)
+			{
+				Console.WriteLine("\n" + document.GetType().Name + "--");
+				foreach (Page page in document.Pages)
+				{
+					Console.WriteLine(" " + page.GetType().Name);
+				}
+			}
 			#endregion
 
 			Console.ReadKey();

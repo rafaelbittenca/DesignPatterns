@@ -63,6 +63,18 @@
     <Compile Include="Example02\Samsung.cs" />
     <Compile Include="Example02\SamsungGalaxy.cs" />
     <Compile Include="Example02\SamsungGuru.cs" />
+    <Compile Include="Example03Simple\BibliographyPage.cs" />
+    <Compile Include="Example03Simple\ConclusionPage.cs" />
+    <Compile Include="Example03Simple\Document.cs" />
+    <Compile Include="Example03Simple\EducationPage.cs" />
+    <Compile Include="Example03Simple\ExperiencePage.cs" />
+    <Compile Include="Example03Simple\IntroductionPage.cs" />
+    <Compile Include="Example03Simple\Page.cs" />
+    <Compile Include="Example03Simple\Report.cs" />
+    <Compile Include="Example03Simple\ResultsPage.cs" />
+    <Compile Include="Example03Simple\Resume.cs" />
+    <Compile Include="Example03Simple\SkillsPage.cs" />
+    <Compile Include="Example03Simple\SummaryPage.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
