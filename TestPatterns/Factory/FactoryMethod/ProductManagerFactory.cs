@@ -7,9 +7,9 @@ using TestPatterns.Models;
 
 namespace TestPatterns.Factory.FactoryMethod
 {
-    public class ProductManagerFactory
-    {
-        public BaseProductFactory CreateFactory(Product prod)
+	public class ProductManagerFactory
+	{
+		public BaseProductFactory CreateFactory(Product prod)
 		{
 			BaseProductFactory value = null;
 			switch (prod.CategoryId)
@@ -28,5 +28,5 @@ namespace TestPatterns.Factory.FactoryMethod
 			}
 			return value;
 		}
-    }
+	}
 }

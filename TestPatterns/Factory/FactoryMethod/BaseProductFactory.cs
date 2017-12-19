@@ -8,8 +8,8 @@ using TestPatterns.Models;
 
 namespace TestPatterns.Factory.FactoryMethod
 {
-    public abstract class BaseProductFactory
-    {
+	public abstract class BaseProductFactory
+	{
 		protected Product _product;
 
 		public BaseProductFactory(Product product)
@@ -26,5 +26,5 @@ namespace TestPatterns.Factory.FactoryMethod
 		}
 
 		public abstract IProductManager Create();
-    }
+	}
 }

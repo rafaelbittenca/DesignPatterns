@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace TestPatterns.Contracts
 {
-    public interface IProductManager
-    {
+	public interface IProductManager
+	{
 		decimal GetBonus();
 		decimal GetTax();
 	}

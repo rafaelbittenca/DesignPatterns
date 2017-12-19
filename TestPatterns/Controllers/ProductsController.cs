@@ -60,10 +60,10 @@ namespace TestPatterns.Controllers
         {
             if (ModelState.IsValid)
             {
-				//Force a exception to create a log using singleton instance
+				// 1-Force a exception to create a log using singleton instance
 				//throw new Exception("Test log singleton");
 
-				//Cople code without factory pattern
+				// 2-Cople code without factory pattern
 				//if (product.CategoryId == 1)
 				//{
 				//	product.Bonus = 5;
@@ -80,13 +80,13 @@ namespace TestPatterns.Controllers
 				//	product.Tax = 7;
 				//}
 
-				//Simple factory
+				// 3-Simple factory
 				//ProductManagerFactory prodFactory = new ProductManagerFactory().CreateFactory;
 				//IProductManager prodManager = prodFactory.GetProductManager(product.CategoryId);
 				//product.Bonus = prodManager.GetBonus();
 				//product.Tax = prodManager.GetTax();
 
-				//Factory Method
+				// 4-Factory Method
 				BaseProductFactory prodFactory = new ProductManagerFactory().CreateFactory(product);
 				prodFactory.ApplyBonusTax();
 

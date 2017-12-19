@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace TestPatterns.Contracts
 {
-    public class HighTaxProductManager : IProductManager
+	public class HighTaxProductManager : IProductManager
 	{
 		public decimal GetBonus()
 		{

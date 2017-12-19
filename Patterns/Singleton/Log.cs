@@ -4,6 +4,7 @@ using System.Text;
 
 namespace Patterns.Singleton
 {
+	//sealed!!
 	public sealed class Log : ILog
 	{
 		private static Log instance = null;
@@ -22,6 +23,7 @@ namespace Patterns.Singleton
 			}
 		}
 
+		//Private!!
 		private Log()
 		{
 		}
