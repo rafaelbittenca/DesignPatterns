@@ -1,4 +1,4 @@
-﻿@model TestPatterns.Models.Product
+﻿@model Patterns.Models.Product
 
 @{
     ViewBag.Title = "Edit";
@@ -32,7 +32,12 @@
                 @Html.ValidationMessageFor(model => model.Description, "", new { @class = "text-danger" })
             </div>
         </div>
-
+        @Html.HiddenFor(m => m.CategoryId)
+        @Html.HiddenFor(m => m.Bonus)
+        @Html.HiddenFor(m => m.Tax)
+        @Html.HiddenFor(m => m.ManufactoryPerc)
+        @Html.HiddenFor(m => m.ImportPerc)
+        @Html.HiddenFor(m => m.InternalPerc)
         <div class="form-group">
             <div class="col-md-offset-2 col-md-10">
                 <input type="submit" value="Save" class="btn btn-default" />

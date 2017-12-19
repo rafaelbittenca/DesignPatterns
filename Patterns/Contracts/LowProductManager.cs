@@ -4,23 +4,23 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace TestPatterns.Contracts
+namespace Patterns.Contracts
 {
-    public class MediumProductManager : IProductManager
+	public class LowProductManager : IProductManager
 	{
 		public decimal GetBonus()
-		{
-			return 2;
-		}
-
-		public decimal GetTax()
 		{
 			return 5;
 		}
 
-		public double GetManufactoryPercentual()
+		public decimal GetTax()
 		{
-			return 0.7;
+			return 2;
+		}
+
+		public double GetInternalPercentual()
+		{
+			return 0.3;
 		}
 	}
 }

@@ -3,10 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using TestPatterns.Contracts;
-using TestPatterns.Models;
+using Patterns.Contracts;
+using Patterns.Models;
 
-namespace TestPatterns.Factory.FactoryMethod
+namespace Patterns.Factory.FactoryMethod
 {
 	public class HighProductFactory : BaseProductFactory
 	{

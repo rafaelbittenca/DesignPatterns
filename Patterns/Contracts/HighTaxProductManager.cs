@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace TestPatterns.Contracts
+namespace Patterns.Contracts
 {
 	public class HighTaxProductManager : IProductManager
 	{

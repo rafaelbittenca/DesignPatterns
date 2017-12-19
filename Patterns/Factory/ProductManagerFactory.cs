@@ -3,12 +3,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using TestPatterns.Contracts;
+using Patterns.Contracts;
 
-namespace TestPatterns.Factory
+namespace Patterns.Factory
 {
-    public class ProductManagerFactory
-    {
+	public class ProductManagerFactory
+	{
 		//Change for FactoryMethod
 
 		//public IProductManager GetProductManager(int categoryId)

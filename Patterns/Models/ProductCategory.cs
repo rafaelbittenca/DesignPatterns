@@ -4,11 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace TestPatterns.Contracts
+namespace Patterns.Models
 {
-	public interface IProductManager
+	public class ProductCategory
 	{
-		decimal GetBonus();
-		decimal GetTax();
+		public int Id { get; set; }
+		public string Name { get; set; }
 	}
 }

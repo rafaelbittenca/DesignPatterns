@@ -7,10 +7,11 @@ using System.Linq;
 using System.Net;
 using System.Web;
 using System.Web.Mvc;
-using TestPatterns.Contracts;
-using TestPatterns.Factory.FactoryMethod;
+using Patterns.Contracts;
+using Patterns.Factory.FactoryMethod;
 using TestPatterns.Models;
 using TestPatterns.ViewModels;
+using Patterns.Models;
 
 namespace TestPatterns.Controllers
 {
@@ -115,6 +116,13 @@ namespace TestPatterns.Controllers
             {
                 return HttpNotFound();
             }
+
+			//var categories = db.Categories.ToList();
+			//var viewModel = new ProductViewModel
+			//{
+			//	Categories = categories
+			//};
+
             return View(product);
         }
 
@@ -123,7 +131,7 @@ namespace TestPatterns.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "Id,Name,Description")] Product product)
+        public ActionResult Edit(Product product)
         {
             if (ModelState.IsValid)
             {

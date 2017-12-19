@@ -5,10 +5,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace TestPatterns.Models
+namespace Patterns.Models
 {
-    public class Product
-    {
+	public class Product
+	{
 		[Required]
 		public int Id { get; set; }
 

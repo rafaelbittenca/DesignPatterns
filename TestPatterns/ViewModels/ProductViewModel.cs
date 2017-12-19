@@ -4,12 +4,12 @@ using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using TestPatterns.Models;
+using Patterns.Models;
 
 namespace TestPatterns.ViewModels
 {
-    public class ProductViewModel
-    {
+	public class ProductViewModel
+	{
 		public IEnumerable<ProductCategory> Categories { get; set; }
 
 		[Required]
