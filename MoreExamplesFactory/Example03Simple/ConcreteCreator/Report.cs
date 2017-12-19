@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace MoreExamplesFactory.Example03Simple
 {
+	//Concrete Creator
     class Report : Document
     {
 		public override void CreatePages()
