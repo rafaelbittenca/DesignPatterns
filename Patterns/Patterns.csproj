@@ -64,6 +64,7 @@
     <Compile Include="Singleton\ILog.cs" />
     <Compile Include="Singleton\Log.cs" />
     <Compile Include="Singleton\SimpleSingleton.cs" />
+    <Compile Include="Singleton\Singleton.cs" />
     <Compile Include="Singleton\ThreadSafeSingleton.cs" />
     <Compile Include="Tests\TestSingleton.cs" />
   </ItemGroup>

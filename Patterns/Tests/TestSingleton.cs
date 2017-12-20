@@ -31,6 +31,5 @@ namespace Patterns.Tests
 			Assert.AreSame(anyClass, anyClass2);
 
 		}
-
 	}
 }

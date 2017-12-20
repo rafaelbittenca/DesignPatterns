@@ -43,10 +43,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Facade\Bank.cs" />
-    <Compile Include="Facade\Credit.cs" />
+    <Compile Include="Facade\SubsytemClass\Bank.cs" />
+    <Compile Include="Facade\SubsytemClass\Credit.cs" />
     <Compile Include="Facade\Customer.cs" />
-    <Compile Include="Facade\Loan.cs" />
+    <Compile Include="Facade\SubsytemClass\Loan.cs" />
     <Compile Include="Facade\Mortgage.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

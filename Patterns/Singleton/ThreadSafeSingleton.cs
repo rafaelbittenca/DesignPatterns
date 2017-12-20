@@ -13,12 +13,15 @@ namespace Patterns.Singleton
 		{
 			get
 			{
-				lock (plock)
+				if (instance == null)
 				{
-					if (instance == null)
-						instance = new ThreadSafeSingleton();
-					return instance;
+					lock (plock)
+					{
+						if (instance == null)
+							instance = new ThreadSafeSingleton();
+					}
 				}
+				return instance;
 			}
 		}
 
